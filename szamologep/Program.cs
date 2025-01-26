@@ -31,6 +31,17 @@ namespace szamologep
                 return "Matematikai hiba";
             }
         }
+        static string Szazalek(double a, double b)
+        {
+            if (b != 0)
+            {
+                return Convert.ToString(a / b * 100) + "%";
+            }
+            else
+            {
+                return "Matematikai hiba";
+            }
+        }
         static void Main(string[] args)
         {
         }
