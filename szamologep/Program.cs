@@ -20,6 +20,17 @@ namespace szamologep
         {
             return a * b;
         }
+        static string Osztas(double a, double b)
+        {
+            if (b != 0)
+            {
+                return Convert.ToString(a / b);
+            }
+            else
+            {
+                return "Matematikai hiba";
+            }
+        }
         static void Main(string[] args)
         {
         }
