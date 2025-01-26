@@ -42,6 +42,18 @@ namespace szamologep
                 return "Matematikai hiba";
             }
         }
+        static void Indit(double a, double b, char jel)
+        {
+            switch (jel)
+            {
+                case '+': Console.WriteLine(Osszeadas(a, b)); break;
+                case '-': Console.WriteLine(Kivonas(a, b)); break;
+                case '*': Console.WriteLine(Szorzas(a, b)); break;
+                case '/': Console.WriteLine(Osztas(a, b)); break;
+                case '%': Console.WriteLine(Szazalek(a, b)); break;
+                default: Console.WriteLine("Hiba"); break;
+            }
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Kérem adja meg az első számot: ");
@@ -50,7 +62,7 @@ namespace szamologep
             double b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Az elvégezendő művelet jele: ");
             char jel = Convert.ToChar(Console.ReadLine());
-            indit(a, b, jel);
+            Indit(a, b, jel);
         }
     }
 }
