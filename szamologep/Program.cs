@@ -44,6 +44,13 @@ namespace szamologep
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Kérem adja meg az első számot: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Kérem adja meg a második számot: ");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Az elvégezendő művelet jele: ");
+            char jel = Convert.ToChar(Console.ReadLine());
+            indit(a, b, jel);
         }
     }
 }
