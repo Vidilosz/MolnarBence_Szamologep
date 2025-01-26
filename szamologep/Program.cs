@@ -16,6 +16,10 @@ namespace szamologep
         {
             return a - b; 
         }
+        static double Szorzas(double a, double b)
+        {
+            return a * b;
+        }
         static void Main(string[] args)
         {
         }
